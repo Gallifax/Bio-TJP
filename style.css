@@ -28,19 +28,6 @@ header > img {
     margin-left: 129.84px;
 }
 
-.website-title-text {
-  width: 250px;
-  height: 50px;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 33.28px;
-  line-height: 50px;
-  letter-spacing: -0.02em;
-  color: #155EEF;
-  margin-left: 0px; 
-}
-
 nav {
   display: flex;
   flex-direction: row;
