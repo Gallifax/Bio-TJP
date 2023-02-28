@@ -5,12 +5,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000000;
-    overflow-x: hidden;
 }
 
 main {
-  width: 1512px;
-  height: 1205px;
   display: flex;
   flex-direction: column;
   background-color: #f1f5fe;
@@ -19,21 +16,23 @@ main {
 header {
   height: 80px;
   display: flex;
-  flex-direction: row;
   align-items: center; 
   background-color: #f1f5fe;
-}
-
-header > img {
-    margin-left: 129.84px;
+  justify-content: space-between;
+  padding: 0 120px;
 }
 
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
-  margin-left: 580px; 
-  width: 243.25px;
+  justify-content: space-between;   
+  gap: 97px;
+}
+
+.navigation-content {
+  display: flex;
+  gap: 97px;
+  align-items: center;
 }
 
 a {
@@ -41,8 +40,6 @@ a {
 }
 
 .navigation-item {
-  width: 74px;
-  height: 22px;
   font-family: 'Halant';
   font-style: normal;
   font-weight: 500;
@@ -51,7 +48,7 @@ a {
   color: #000000;
 }
 
-header > button {
+.navigation-content > button {
   width: 100px;
   height: 46px;
   border: 2px #155EEF solid;
@@ -60,10 +57,8 @@ header > button {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 150%;
   letter-spacing: 0.5px;
   color: #155EEF; 
-  margin-left: 103.25px;
   background-color: #f1f5fe;
 }
 
@@ -73,24 +68,19 @@ header > button {
   background-color: black;
   display: flex;
   flex-direction: row;
-  height: 535px;
+  padding: 0 120px;
 }
 
 .person-info-section-text {
-  width: 840px; 
-  height: 250px;
-  margin-left: 120px;
+  padding: 105px 0;
 }
 
 .person-info-section-text > .person-name {
-   font-family: 'Halant';
+  font-family: 'Halant';
   font-style: normal;
   font-weight: 600;
   font-size: 56px;
   line-height: 120%;
-    margin: 0;
-    padding: 0; 
-  /* or 67px */
   color: #FFFFFF;
 }
 
@@ -101,10 +91,7 @@ header > button {
   font-weight: 500;
   font-size: 32px;
   line-height: 150%;
-  /* or 48px */
-
   letter-spacing: 0.5px;
-
   color: #A3A3A3;
 }
 
@@ -141,59 +128,59 @@ header > button {
 /* ABOUT ME SECTION */
 
 .about-me-section {
-  height: 505px;
+  background-color: #FFFFFF;
+  
 }
 
 .about-me-subsection {
-  height: 438px;
-  margin-top: 32px;
+  margin: 32px 0;
   background-color: #f1f5fe;
   display: flex;
   flex-direction: row;
+  padding: 0 120px;
   }
 
 .about-me-subsection > img {
-  width: 516px;
   height: 374px;
   align-self: center;
-  margin-left: 120px;
 }
 
 .about-me-subsection-text {
-  height: 374px; 
-  width: 575px;
-/*   align-self: center; */
-  margin-left: 157px;
+margin-left: 157px;
 }
 
 .about-me-subsection-text > p:nth-child(1) {
-   width: 157px;
-  height: 50px;
-  margin: 0px;
   margin-top: 48px;
   font-family: 'Halant';
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 50px;
-
   color: #000000;
+  width: 50%;
 }
 
 .about-me-subsection-text > p:nth-child(2)  {
   margin: 0px;
-  margin-top: 18px;
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 150%;
-  /* or 36px */
-
   text-align: justify;
   letter-spacing: 0.5px;
 
   color: #000000; 
+}
+
+.about-me-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 42px;
+  padding-bottom: 56px;
 }
 
 .hire-me-button {
@@ -209,7 +196,6 @@ header > button {
   line-height: 150%;
   letter-spacing: 0.5px;   
   color: #FFFFFF;
-  margin-top: 46px;
 }
 
 .see-my-resume-button {
@@ -224,7 +210,6 @@ header > button {
   height: 44px;
   border: 1px #155EEF solid;
   border-radius: 8px;
-  margin-left: 16px;
   background-color: #f1f5fe; 
 }
 
@@ -234,50 +219,35 @@ header > button {
 footer {
     display: flex;
     flex-direction: row;
-    height: 88px; 
     background-color: black;
     align-items: center;
     color: #FFFFFF;
-
-
+    padding: 0 120px;
+    justify-content: space-between;
   }
 
-footer > img {
-    margin-left: 129.84px;
-}
-  
-  .footer-title-text {
-    width: 250px;
-    height: 50px;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 33.28px;
-    line-height: 50px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-  }
-
-  
   .contacts {
-    margin-left: 310.92px;
+    gap: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 92px;
+
   }
-  
-  .developed-by-section > p {
-    height: 36px;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 150%;
-    letter-spacing: 0.5px;
-    color: #FFFFFF;
-    margin-left: 251px;
+
+  .footer-content {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
+
+.developed-by-section > p {
+   font-family: 'Manrope';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 150%;
+   letter-spacing: 0.5px;
+
+}
+
 
